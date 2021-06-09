@@ -1,4 +1,5 @@
 # carousel-vanillajs
+
 -----------------------------H-CAROUSEL-----------------------------------
 
 A infinite and responsive carousel w/ vanilla JavaScript
@@ -8,6 +9,7 @@ By Henrique, L.
 Using FontAwesome Icons (chevrons) and images from freepik.com for demonstration
 
 EXAMPLE:
+
 ------------------------HTML-----------------------------
 
   <div class="carousel">
