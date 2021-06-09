@@ -33,69 +33,70 @@ EXAMPLE:
   
 ------------------------CSS----------------------------
 
-  .carousel{
-    width: 100%;
-    position: relative;
-  }
+	  .carousel{
+	    width: 100%;
+	    position: relative;
+	  }
 
-  .carousel-container{
-    width: 100%;
-    position: relative;
-    display: flex;
-    flex-wrap: nowrap;
-  }
+	  .carousel-container{
+	    width: 100%;
+	    position: relative;
+	    display: flex;
+	    flex-wrap: nowrap;
+	  }
 
-  .slide-single{
-    width: 100%;
-  }
+	  .slide-single{
+	    width: 100%;
+	  }
 
-  img.image-carousel{
-    width: 100%;
-  }
+	  img.image-carousel{
+	    width: 100%;
+	  }
 
-  .carousel-mobile{
-    display: none;
-  }
+	  .carousel-mobile{
+	    display: none;
+	  }
 
-  .carousel-bullets{
-    padding: 5px 0;
-    width: 100%;
-    text-align: center;
-  }
+	  .carousel-bullets{
+	    padding: 5px 0;
+	    width: 100%;
+	    text-align: center;
+	  }
 
-  .bullet{
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    display: inline-block;
-    margin: 0 7px;
-    cursor: pointer;
-  }
+	  .bullet{
+	    width: 8px;
+	    height: 8px;
+	    border-radius: 50%;
+	    display: inline-block;
+	    margin: 0 7px;
+	    cursor: pointer;
+	  }
 
-  .active{
-    background-color: black;
-  }
+	  .active{
+	    background-color: black;
+	  }
 
-  .arrows{
-    font-size: 40px;
-    cursor: pointer;
-    position: absolute;
-  }
+	  .arrows{
+	    font-size: 40px;
+	    cursor: pointer;
+	    position: absolute;
+	  }
 
-  #navnext {
-    right: 10px;
-    top: 40%;
-  }
+	  #navnext {
+	    right: 10px;
+	    top: 40%;
+	  }
 
-  #navprev {
-    left: 10px;
-    top: 40%;
-  }
+	  #navprev {
+	    left: 10px;
+	    top: 40%;
+	  }
 
 ------------------------MAIN JS-------------------------
-  import { carouselBuilder } from '../../modules/hcarrousel.js'
-  /*......*/
-  //create carousel object
+  
+	import { carouselBuilder } from '../../modules/hcarrousel.js'
+	  /*......*/
+	//create carousel object
 	const carousel = {
 		slidesContainer: choosedCarousel, //container - all slides
 		allSlides: choosedCarousel.querySelectorAll('.slide-single'), //DOM object w/ each single slide
