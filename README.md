@@ -113,6 +113,7 @@ EXAMPLE:
 		bulletsContainer: document.querySelector('.carousel-bullets'), //navigation bullets container
 		arrowLeft: document.querySelector('#navprev'),
 		arrowRight: document.querySelector('#navnext'),
+		autoSlide: true, //or false
 		speed: 500, //speed of animation (ms)
 		interval: 5000 //interval between slides (ms)
 	}
