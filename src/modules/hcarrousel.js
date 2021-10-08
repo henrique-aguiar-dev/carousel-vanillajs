@@ -8,6 +8,7 @@ export const carouselBuilder = carousel => {
 	const navPrev = carousel.arrowLeft
 	const speed = carousel.speed
 	const timeToChange = carousel.interval
+	const autoSlide = carousel.autoSlide
 	const swipeLimit = Math.floor(window.innerWidth * 0.4)
 	let allBullets
 	let actualSlide = 0
@@ -110,7 +111,7 @@ export const carouselBuilder = carousel => {
 	}
 
 	const startAutoSlide = () => {
-		if (!autoSlideOn) {
+		if (autoSlide && !autoSlideOn) {
 			autoSlideInterval = setInterval(moveAutoSlide, timeToChange)
 			autoSlideOn = true
 		}
@@ -118,7 +119,7 @@ export const carouselBuilder = carousel => {
 	}
 
 	const stopAutoSlide = () => {
-		if (autoSlideOn) {
+		if (autoSlide && autoSlideOn) {
 			clearInterval(autoSlideInterval)
 			autoSlideOn = false
 		}
@@ -236,5 +237,5 @@ export const carouselBuilder = carousel => {
 	createBullets(numOfSlides)
 	listenNavArrows()
 	duplicate()
-	startAutoSlide()
+	if (autoSlide) startAutoSlide()
 }
