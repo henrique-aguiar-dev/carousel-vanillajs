@@ -8,7 +8,7 @@ By Henrique, L.
 
 Using FontAwesome Icons (chevrons) and images from freepik.com for demonstration
 
-Demonstration: https://apilogik.github.io/carousel-vanillajs/
+Demonstration: https://henrique-aguiar-dev.github.io/carousel-vanillajs/
 
 Slide on:
 - Automatic if mouse is out;
